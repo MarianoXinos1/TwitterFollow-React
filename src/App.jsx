@@ -1,26 +1,16 @@
 import './App.css'
+import TwitterCard from './TwitterCard.jsx'
 
 function App() {
   
   return (
-    <>                                                                             {/*  <> = <React.Fragment> = permite agrupar una lista de hijos sin agregar un div(para que este ams limpio el DOM)   */}
-      <article>
-        <header>
-          <img alt='El avatar del usuario'  src='https://unavatar.io/alex'/>
-          <div>
-            <strong>Alex Xinos</strong>
-            <span>@alex</span>
-          </div>
-        </header>
-
-        <aside>
-          <button>
-            Seguir
-          </button>
-        </aside>
-      </article>
-    </>
-  )
+   <section className='App'>                                                                          
+    <TwitterCard isFollowing={true} userName= 'codigoconjuan' name='Juan Manuel' />
+    <TwitterCard isFollowing={false} userName= 'MoureDev' name='Miguel Angel Sierra' />
+    <TwitterCard isFollowing={true} userName= 'teffcode' name='Sandra Aguilar' />
+    <TwitterCard isFollowing={true} userName= 'EstefaniaCassN' name='Estefani Gutierres' />
+   </section>
+  );
 }
 
 export default App
