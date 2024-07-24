@@ -7,21 +7,22 @@ body{
     min-height: 100vh;
   }
   
+
   .contenedor{
     display:flex;
     align-items:center;
     justify-content: space-between;
     color: #fff;
     font-size: 0.8rem;
-   
   }
   
+
   .contenedor_header{
     display: flex;
     align-items: center;
     gap: 4px;
   }
-  
+
   .contenedor_header-img{
     width: 48px;
     height: 48px;
@@ -32,10 +33,11 @@ body{
     display: flex;
     flex-direction: column;
   }
-  
+
   .contenedor_header-nombre{
     opacity: 0.6;
   }
+
 
   .contenedor_boton{
     margin-left: 15px;
@@ -53,10 +55,25 @@ body{
 
   .contenedor_boton-siguiendo{
     border: 2px solid red;
-    
+    background: transparent;
+    color: #fff;
+    border: 2px solid #bbb;
+    width: 130px;  
   }
 
   .contenedor_boton-siguiendo:hover{
     background: rgb(221, 87, 87);
     border: 2px solid black;
+  }
+  
+  .dejarDeSeguir{
+    display: none;                                     /* para ocultar un elemento en la pagina, también se elimina el espacio que ocupa, es como si el elemento no existiera en el documento */ 
+  }
+
+  .contenedor_boton-siguiendo:hover .dejarDeSeguir{    /* solo se aplicarán al .botonText cuando el .contenedor_boton-siguiendo esté en estado de "hover"*/
+    display: block;                                    /* hacemos visible el none */
+  }
+
+  .contenedor_boton-siguiendo:hover .botonText{
+    display: none;
   }
