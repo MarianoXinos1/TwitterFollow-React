@@ -47,6 +47,7 @@ body{
     font-weight: bold;
     cursor: pointer;
     border: 2px solid #986edb;
+    transition: background 0.3s, border 0.3s; 
   }
   
   .contenedor_boton:hover{
@@ -59,6 +60,7 @@ body{
     color: #fff;
     border: 2px solid #bbb;
     width: 130px;  
+    transition: background 0.4s, border 0.4s;         /* impresionante la dif si no esta */
   }
 
   .contenedor_boton-siguiendo:hover{

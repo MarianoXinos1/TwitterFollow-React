@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 function TwitterCard(props) {
 
-    const [isFollowing , setIsFollowing] = useState(false);                                                           // la primera posicion del array nos da = valor del estado                      
+   const [isFollowing , setIsFollowing] = useState(false);                                                            // la primera posicion del array nos da = valor del estado                      
                                                                                                                       // la segunda posicion del array = es para actualizar el estado anterior                                                                         
    const text = isFollowing ? 'Siguiendo' : 'Seguir';
    const buttonClassName = isFollowing ? 'contenedor_boton contenedor_boton-siguiendo' :'contenedor_boton'
