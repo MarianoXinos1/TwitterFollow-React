@@ -36,12 +36,27 @@ body{
   .contenedor_header-nombre{
     opacity: 0.6;
   }
-  
+
   .contenedor_boton{
     margin-left: 15px;
     border: 0px;
     border-radius: 1000px;
     padding: 6px 16px;
     font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #986edb;
   }
   
+  .contenedor_boton:hover{
+    background: #986edb;
+  }
+
+  .contenedor_boton-siguiendo{
+    border: 2px solid red;
+    
+  }
+
+  .contenedor_boton-siguiendo:hover{
+    background: rgb(221, 87, 87);
+    border: 2px solid black;
+  }
